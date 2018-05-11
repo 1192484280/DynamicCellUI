@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B835E6C20A29E11006A2324 /* DesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B835E6B20A29E11006A2324 /* DesView.m */; };
 		6B8B800D20A1A40600D3CE7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8B800C20A1A40600D3CE7D /* AppDelegate.m */; };
 		6B8B801020A1A40600D3CE7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8B800F20A1A40600D3CE7D /* ViewController.m */; };
 		6B8B801320A1A40600D3CE7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8B801120A1A40600D3CE7D /* Main.storyboard */; };
@@ -21,8 +20,6 @@
 
 /* Begin PBXFileReference section */
 		6B835E6920A28A2A006A2324 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		6B835E6A20A29E11006A2324 /* DesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesView.h; sourceTree = "<group>"; };
-		6B835E6B20A29E11006A2324 /* DesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesView.m; sourceTree = "<group>"; };
 		6B8B800820A1A40600D3CE7D /* CellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8B800B20A1A40600D3CE7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B8B800C20A1A40600D3CE7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,8 +108,6 @@
 			children = (
 				6B8B802720A1A66B00D3CE7D /* PersonCell.h */,
 				6B8B802820A1A66B00D3CE7D /* PersonCell.m */,
-				6B835E6A20A29E11006A2324 /* DesView.h */,
-				6B835E6B20A29E11006A2324 /* DesView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,7 +184,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8B802920A1A66B00D3CE7D /* PersonCell.m in Sources */,
-				6B835E6C20A29E11006A2324 /* DesView.m in Sources */,
 				6B8B802C20A1ABCD00D3CE7D /* PersonViewModel.m in Sources */,
 				6B8B802620A1A53700D3CE7D /* PersonModel.m in Sources */,
 				6B8B801020A1A40600D3CE7D /* ViewController.m in Sources */,
@@ -331,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KT68RG6C2C;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/zhangming/Desktop/CellDemo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/zhangming/Desktop/DynamicCellUI/CellDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CellDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -348,7 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KT68RG6C2C;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/zhangming/Desktop/CellDemo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/zhangming/Desktop/DynamicCellUI/CellDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CellDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

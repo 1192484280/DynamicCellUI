@@ -25,7 +25,5 @@
 
 @property (assign, nonatomic) CGFloat cellHeight;
 
-@property (assign, nonatomic) CGRect desFrame;
-
 
 @end

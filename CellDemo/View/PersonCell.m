@@ -9,7 +9,6 @@
 #import "PersonCell.h"
 #import "PersonViewModel.h"
 #import "PersonModel.h"
-#import "DesView.h"
 
 @interface PersonCell()
 
@@ -21,7 +20,6 @@
 
 @property (weak, nonatomic) UILabel *titleLa;
 
-@property (weak, nonatomic) DesView *desView;
 
 @end
 
@@ -77,10 +75,6 @@
     [self addSubview:titleLa];
     self.titleLa = titleLa;
     
-    DesView *desView = [[DesView alloc] init];
-    [self addSubview:desView];
-    self.desView = desView;
-    
 }
 
 
@@ -90,14 +84,12 @@
     self.nameLa.text = frameModel.personModel.name;
     self.ageLa.text = frameModel.personModel.age;
     self.titleLa.text = frameModel.personModel.title;
-    self.desView.frameModel = frameModel;
-
     
     self.im.frame = frameModel.iconFrame;
     self.nameLa.frame = frameModel.nameFrame;
     self.ageLa.frame = frameModel.ageFrame;
     self.titleLa.frame = frameModel.titleFrame;
-    self.desView.frame = frameModel.desFrame;
+
 }
 
 

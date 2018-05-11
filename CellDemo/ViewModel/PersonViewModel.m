@@ -36,30 +36,24 @@
     CGFloat ageH = 21;
     self.ageFrame = CGRectMake(ageX, ageY, ageW, ageH);
     
-    //头像
+    //图片
     CGFloat iconX = SPACING;
     CGFloat iconY = CGRectGetMaxY(self.ageFrame) + SPACING;
     CGFloat iconW = 45;
     CGFloat iconH = 45;
     self.iconFrame = CGRectMake(iconX, iconY, iconW, iconH);
     
+    
     self.titleFrame = self.iconFrame;
     
-    if (self.personModel.title.length > 0) {
+    if (self.personModel.title) {
         
-        //标题
         CGFloat titleX = SPACING;
         CGFloat titleY = CGRectGetMaxY(self.iconFrame) + SPACING;
         CGFloat titleW = KScreenWidth - 2 * SPACING;
         CGSize textSize = [self.personModel.title boundingRectWithSize:CGSizeMake(titleW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:FONT context:nil].size;
         self.titleFrame = (CGRect){{titleX,titleY},textSize};
-    }
     
-    self.desFrame = self.titleFrame;
-    
-    if (self.personModel.des.count > 0) {
-        
-        self.desFrame = CGRectMake(SPACING, CGRectGetMaxY(self.titleFrame), 200,  21 *(self.personModel.des.count) + SPACING  * (self.personModel.des.count - 1));
     }
     
     
@@ -67,6 +61,6 @@
 
 - (void)setCellHeight{
     
-    self.cellHeight = CGRectGetMaxY(self.desFrame) + 30;
+    self.cellHeight = CGRectGetMaxY(self.titleFrame) + SPACING;
 }
 @end
